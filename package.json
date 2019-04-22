@@ -5,9 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "cross-env VUE_CLI_CSS_SHADOW_MODE=true vue-cli-service build",
+    "build_component": "vue-cli-service build --target wc --name puzzle-button src/components/PuzzleButton.vue ",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "copy-webpack-plugin": "^5.0.2",
     "vue": "^2.5.16"
   },
   "devDependencies": {
